@@ -49,10 +49,12 @@ public class Functions {
         int middle = (int)students.entrySet().stream().filter(x -> x.getValue() >=6.5 && x.getValue() <8 ).count();
         int normal = (int)students.entrySet().stream().filter(x -> x.getValue() >=5 && x.getValue() <6.5 ).count();
 
-
-        System.out.println("Giỏi (điểm tổng kết 8 - 10) " + excellence + " Tỉ lệ: " + (double) excellence/students.size()*100 + "%" );
-        System.out.println("Khá (điểm tổng kết 6.5 - 8) " + middle + " Tỉ lệ: " + (double) middle/students.size()*100 + "%" );
-        System.out.println("Trung bình (điểm tổng kết 5 - 6.5) " + normal + " Tỉ lệ: " + (double) normal/students.size()*100 + "%" );
+        double rateExcellent = (double) excellence/students.size()*100;
+        double rateGood = (double) middle/students.size()*100;
+        double rateMedium = (double) normal/students.size()*100;
+        System.out.println("Giỏi (điểm tổng kết 8 - 10) " + excellence + " Tỉ lệ: " + Math.round(rateExcellent*10)/10.0d + "%" );
+        System.out.println("Khá (điểm tổng kết 6.5 - 8) " + middle + " Tỉ lệ: " + Math.round(rateGood*10)/10.0d + "%" );
+        System.out.println("Trung bình (điểm tổng kết 5 - 6.5) " + normal + " Tỉ lệ: " +Math.round(rateMedium*10)/10.0d + "%" );
     }
 
 }
