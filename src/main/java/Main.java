@@ -19,20 +19,20 @@ public class Main {
 
         //Question 3
         Map<Student,Double> finalScore = function.finalScore(studentList);
-        System.out.println(finalScore);
+
 
         //Question 4
         System.out.println("The student list having lowest score");
         Map<Student,Double> top10LowestFinalMark = function.theLowestFinalScore(finalScore);
         for (Map.Entry<Student,Double> item: top10LowestFinalMark.entrySet()) {
-            System.out.println(item.getKey().toString() + " ,final mark: " + item.getValue());
+            System.out.println(item.getKey().toString() + ",final mark: " + item.getValue());
         }
         System.out.println("-----------");
 
         //Question 5
         System.out.println("The final score of all students");
         for (Map.Entry<Student,Double> item: finalScore.entrySet()) {
-            System.out.println(item.getKey().toString() + " ,final mark: " + item.getValue());
+            System.out.println(item.getKey().toString() + ",final mark: " + item.getValue());
         }
         System.out.println("-----------");
 
