@@ -18,10 +18,8 @@ public class Main {
         System.out.println("-----------");
 
         //Question 3
-        System.out.println("The final score of students");
         Map<Student,Double> finalScore = function.finalScore(studentList);
         System.out.println(finalScore);
-        System.out.println("-----------");
 
         //Question 4
         System.out.println("The student list having lowest score");

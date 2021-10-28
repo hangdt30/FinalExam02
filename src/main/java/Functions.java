@@ -7,10 +7,11 @@ public class Functions {
         if (students == null || students.size() < 10) {
             throw new Exception("Invalid size of list student");
         }
-        return students.stream()
-                .sorted(Comparator.comparingDouble(Student::getLt).reversed())
-                .limit(10)
-                .collect(Collectors.toList());
+        return  students.stream().sorted(Comparator.comparingDouble())
+//                students.stream()
+//                .sorted(Comparator.comparingDouble(Student::getLt).reversed())
+//                .limit(10)
+//                .collect(Collectors.toList());
     }
 
     public Map<Student, Double> finalScore(List<Student> students) throws Exception {
