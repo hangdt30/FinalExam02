@@ -1,6 +1,5 @@
-import javax.swing.plaf.synth.SynthFormattedTextFieldUI;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -40,6 +39,7 @@ public class Main {
         System.out.println("-----------");
 
         //Question 6
+        System.out.println("Rating");
         function.classStatistic(finalScore);
 
     }
